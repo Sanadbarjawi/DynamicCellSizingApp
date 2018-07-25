@@ -12,6 +12,8 @@
 		C90F8265210867DD00BF899C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90F8263210867DD00BF899C /* Main.storyboard */; };
 		C90F8267210867E500BF899C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90F8266210867E500BF899C /* Assets.xcassets */; };
 		C90F826A210867E500BF899C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90F8268210867E500BF899C /* LaunchScreen.storyboard */; };
+		C90F827521086C6100BF899C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F827321086C6100BF899C /* CustomCell.swift */; };
+		C90F827621086C6100BF899C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F827421086C6100BF899C /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C90F8266210867E500BF899C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90F8269210867E500BF899C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90F826B210867E500BF899C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90F827321086C6100BF899C /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C90F827421086C6100BF899C /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C90F8266210867E500BF899C /* Assets.xcassets */,
 				C90F8268210867E500BF899C /* LaunchScreen.storyboard */,
 				C90F826B210867E500BF899C /* Info.plist */,
+				C90F827321086C6100BF899C /* CustomCell.swift */,
+				C90F827421086C6100BF899C /* CustomCell.xib */,
 			);
 			path = DynamicCellSizingApp;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			files = (
 				C90F826A210867E500BF899C /* LaunchScreen.storyboard in Resources */,
 				C90F8267210867E500BF899C /* Assets.xcassets in Resources */,
+				C90F827621086C6100BF899C /* CustomCell.xib in Resources */,
 				C90F8265210867DD00BF899C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90F8262210867DD00BF899C /* ViewController.swift in Sources */,
+				C90F827521086C6100BF899C /* CustomCell.swift in Sources */,
 				C90F8260210867DD00BF899C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

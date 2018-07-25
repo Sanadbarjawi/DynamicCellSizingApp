@@ -14,15 +14,21 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
-    }
+//        tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+        tableView.register(UINib(nibName: "CustomCellWithCollectionView", bundle: nil), forCellReuseIdentifier: "CustomCellWithCollectionView")
 
+        
+    }
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        tableView.reloadData()
+    }
 
 
 }
 extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellWithCollectionView", for: indexPath) as! CustomCellWithCollectionView
+        cell.ImgsCollectionView.reloadData()
         cell.testLbl.text = cellContentArray[indexPath.row]
         cell.imgView.image = UIImage(named: "Account")
         

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCellWithCollectionView" rowHeight="487" id="KGk-i7-Jjw" customClass="CustomCellWithCollectionView" customModule="DynamicCellSizingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="604" height="487"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="604" height="486.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yvw-IT-f6v">
+                        <rect key="frame" x="16" y="215.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Fe6-IS-Fst"/>
+                            <constraint firstAttribute="height" constant="50" id="e7o-17-0OT"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pHi-lw-xxX">
+                        <rect key="frame" x="82" y="5" width="506" height="471.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHx-g4-g1I">
+                                <rect key="frame" x="0.0" y="0.0" width="506" height="260.5"/>
+                                <mutableString key="text">this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGQ-cF-Wn4">
+                                <rect key="frame" x="0.0" y="265.5" width="506" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="NRB-zJ-mRp"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="82X-cS-dX8">
+                                <rect key="frame" x="0.0" y="271.5" width="506" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aaG-OW-DF6"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2uo-Ew-2R6">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pHi-lw-xxX" secondAttribute="trailing" constant="16" id="3me-8o-qm8"/>
+                    <constraint firstItem="Yvw-IT-f6v" firstAttribute="bottom" secondItem="HHx-g4-g1I" secondAttribute="bottom" id="8DQ-SF-sVo"/>
+                    <constraint firstItem="pHi-lw-xxX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OdS-tO-Nff"/>
+                    <constraint firstItem="Yvw-IT-f6v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Yqf-4l-zpY"/>
+                    <constraint firstItem="pHi-lw-xxX" firstAttribute="leading" secondItem="Yvw-IT-f6v" secondAttribute="trailing" constant="16" id="fSn-1W-erH"/>
+                    <constraint firstItem="Yvw-IT-f6v" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="k8d-QL-04L"/>
+                    <constraint firstAttribute="bottom" secondItem="pHi-lw-xxX" secondAttribute="bottom" constant="10" id="wtN-N1-yaJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ImgsCollectionView" destination="82X-cS-dX8" id="gTg-Zf-Aiz"/>
+                <outlet property="imgView" destination="Yvw-IT-f6v" id="yok-uF-RSO"/>
+                <outlet property="testLbl" destination="HHx-g4-g1I" id="ptn-rV-BP0"/>
+            </connections>
+            <point key="canvasLocation" x="-432" y="6.5"/>
+        </tableViewCell>
+    </objects>
+</document>

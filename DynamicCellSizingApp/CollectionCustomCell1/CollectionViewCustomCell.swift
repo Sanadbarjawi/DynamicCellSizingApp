@@ -1,5 +1,5 @@
 //
-//  CustomCell.swift
+//  CollectionViewCustomCell.swift
 //  DynamicCellSizingApp
 //
 //  Created by Sanad Barjawi on 7/25/18.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class CustomCell: UITableViewCell {
-    @IBOutlet weak var testLbl: UILabel!
+class CollectionViewCustomCell: UICollectionViewCell {
+
     @IBOutlet weak var imgView: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    
 }

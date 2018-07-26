@@ -16,6 +16,9 @@
 		C90F827B210871E800BF899C /* CustomCellWithCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F8279210871E800BF899C /* CustomCellWithCollectionView.xib */; };
 		C90F827F2108743F00BF899C /* CollectionViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F827D2108743F00BF899C /* CollectionViewCustomCell.swift */; };
 		C90F82802108743F00BF899C /* CollectionViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F827E2108743F00BF899C /* CollectionViewCustomCell.xib */; };
+		C90F82BF2109A83600BF899C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F82BE2109A83600BF899C /* Extensions.swift */; };
+		C90F82C72109FEC800BF899C /* ObjcHeaderExample.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F82C62109FEC800BF899C /* ObjcHeaderExample.m */; };
+		C90F82C9210A002D00BF899C /* PassingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F82C8210A002D00BF899C /* PassingData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,11 @@
 		C90F8279210871E800BF899C /* CustomCellWithCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellWithCollectionView.xib; sourceTree = "<group>"; };
 		C90F827D2108743F00BF899C /* CollectionViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCustomCell.swift; sourceTree = "<group>"; };
 		C90F827E2108743F00BF899C /* CollectionViewCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCustomCell.xib; sourceTree = "<group>"; };
+		C90F82BE2109A83600BF899C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C90F82C42109FEC800BF899C /* DynamicCellSizingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicCellSizingApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C90F82C52109FEC800BF899C /* ObjcHeaderExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcHeaderExample.h; sourceTree = "<group>"; };
+		C90F82C62109FEC800BF899C /* ObjcHeaderExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcHeaderExample.m; sourceTree = "<group>"; };
+		C90F82C8210A002D00BF899C /* PassingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassingData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C90F825F210867DD00BF899C /* AppDelegate.swift */,
+				C90F82BE2109A83600BF899C /* Extensions.swift */,
 				C90F8261210867DD00BF899C /* ViewController.swift */,
 				C90F8263210867DD00BF899C /* Main.storyboard */,
 				C90F8266210867E500BF899C /* Assets.xcassets */,
@@ -70,6 +79,10 @@
 				C90F826B210867E500BF899C /* Info.plist */,
 				C90F827C210871EB00BF899C /* TableCustomCell */,
 				C90F82812108744200BF899C /* CollectionCustomCell1 */,
+				C90F82C52109FEC800BF899C /* ObjcHeaderExample.h */,
+				C90F82C62109FEC800BF899C /* ObjcHeaderExample.m */,
+				C90F82C42109FEC800BF899C /* DynamicCellSizingApp-Bridging-Header.h */,
+				C90F82C8210A002D00BF899C /* PassingData.swift */,
 			);
 			path = DynamicCellSizingApp;
 			sourceTree = "<group>";
@@ -124,6 +137,7 @@
 				TargetAttributes = {
 					C90F825B210867DD00BF899C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -165,10 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90F82C9210A002D00BF899C /* PassingData.swift in Sources */,
+				C90F82BF2109A83600BF899C /* Extensions.swift in Sources */,
 				C90F8262210867DD00BF899C /* ViewController.swift in Sources */,
 				C90F827F2108743F00BF899C /* CollectionViewCustomCell.swift in Sources */,
 				C90F8260210867DD00BF899C /* AppDelegate.swift in Sources */,
 				C90F827A210871E800BF899C /* CustomCellWithCollectionView.swift in Sources */,
+				C90F82C72109FEC800BF899C /* ObjcHeaderExample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2N3VT93X7;
 				INFOPLIST_FILE = DynamicCellSizingApp/Info.plist;
@@ -321,6 +339,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-sanadbarj.DynamicCellSizingApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicCellSizingApp/DynamicCellSizingApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2N3VT93X7;
 				INFOPLIST_FILE = DynamicCellSizingApp/Info.plist;
@@ -339,6 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-sanadbarj.DynamicCellSizingApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicCellSizingApp/DynamicCellSizingApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

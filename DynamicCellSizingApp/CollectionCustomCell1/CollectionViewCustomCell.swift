@@ -9,11 +9,14 @@
 import UIKit
 
 class CollectionViewCustomCell: UICollectionViewCell {
-
+ 
     @IBOutlet weak var imgView: UIImageView!
+    var index:Int!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    func populateCell(img:String){
+        self.imgView.image = UIImage(named: img)
+    }
 }
+

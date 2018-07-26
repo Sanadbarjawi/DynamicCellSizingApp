@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,7 +32,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHx-g4-g1I">
                                 <rect key="frame" x="0.0" y="0.0" width="506" height="260.5"/>
-                                <mutableString key="text">this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label</mutableString>
+                                <string key="text">this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small labelthis is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label turning long, sthis is a small label this is a small label</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,13 +59,24 @@
                             </collectionView>
                         </subviews>
                     </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJ9-Dz-DST">
+                        <rect key="frame" x="20" y="154" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="btnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5dj-dQ-1XG"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="pHi-lw-xxX" secondAttribute="trailing" constant="16" id="3me-8o-qm8"/>
+                    <constraint firstItem="QJ9-Dz-DST" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="57p-dp-UlY"/>
                     <constraint firstItem="Yvw-IT-f6v" firstAttribute="bottom" secondItem="HHx-g4-g1I" secondAttribute="bottom" id="8DQ-SF-sVo"/>
+                    <constraint firstItem="pHi-lw-xxX" firstAttribute="leading" secondItem="QJ9-Dz-DST" secondAttribute="trailing" constant="16" id="CFi-1Y-eAJ"/>
+                    <constraint firstItem="QJ9-Dz-DST" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="123" id="JJG-3U-Xzd"/>
                     <constraint firstItem="pHi-lw-xxX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OdS-tO-Nff"/>
                     <constraint firstItem="Yvw-IT-f6v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Yqf-4l-zpY"/>
                     <constraint firstItem="pHi-lw-xxX" firstAttribute="leading" secondItem="Yvw-IT-f6v" secondAttribute="trailing" constant="16" id="fSn-1W-erH"/>
+                    <constraint firstItem="Yvw-IT-f6v" firstAttribute="top" secondItem="QJ9-Dz-DST" secondAttribute="bottom" constant="31.5" id="iXX-Nc-SLv"/>
                     <constraint firstItem="Yvw-IT-f6v" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="k8d-QL-04L"/>
                     <constraint firstAttribute="bottom" secondItem="pHi-lw-xxX" secondAttribute="bottom" constant="10" id="wtN-N1-yaJ"/>
                 </constraints>
